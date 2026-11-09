@@ -1,0 +1,16 @@
+# Hermes profile distribution manifest.
+name: assistant
+version: 1.0.0
+description: >-
+  Coaching Hive Executive Assistant for online coaches. Owns the coach's inbox triage, daily brief, calendar prep, meeting notes and weekly review. Draft-only: never sends email, accepts invites, or changes the calendar without the coach's yes.
+hermes_requires: ">=0.20.0"
+author: Coaching Hive
+license: MIT
+# Only these paths are installed and replaced on update. Memories, sessions,
+# keys, .env and skills the coach makes stay untouched.
+distribution_owned:
+  - distribution.yaml
+  - profile.yaml
+  - SOUL.md
+  - config.yaml
+  - skills/coaching-hive
